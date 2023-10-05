@@ -3,7 +3,7 @@ let formulario = document.querySelector('.formulario')
 let pesquisa = document.querySelector('.form-control')
 
 async function getFilmes(buscar){
-    let request = await fetch(`http://www.omdbapi.com/?s=${buscar}&apikey=e6c43dc6`)
+    let request = await fetch(`https://www.omdbapi.com/?s=${buscar}&apikey=e6c43dc6`)
     let data = await request.json()
     
     console.log(data);
